@@ -9,6 +9,7 @@ import './provider/tabmanager.dart';
 import './screens/splash_screen.dart';
 import './services/anime_service.dart';
 import './theme/tako_theme.dart';
+import 'Rating.dart';
 
 void main() async {
   _setUpLogging();
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Tako Anime Tracker',
           theme: TakoTheme.dark(),
-          home: const SplashScreen(),
+          home: SplashScreen()
         ),
       ),
     );
